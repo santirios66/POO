@@ -1,11 +1,11 @@
 public class trabajo1 {
     public static void main(String[] args) {
         //punto 1 
-        double d1 = 42.0 , d2 = 58.5 , d3 = 37.2;
-        double t1 = 0.9 , t2 = 1.4 , t3 = 0.8 ; 
-        double l1 = 5.1 , l2 = 6.9 , l3 = 4.3;
-        double precioLitro = 1.35 , masaCargaKg = 1200, largo = 2.0, ancho = 1.2 , alto= 1.1;
-        double p1 = 2.5 , p2 = 3.0 , p3 = 2.0 , deprecPorKm = 0.08;
+        double d1 = 35.0 , d2 = 72.0 , d3 = 53.0;
+        double t1 = 0.7 , t2 = 1.6 , t3 = 1.1 ; 
+        double l1 = 4.4 , l2 = 9.0 , l3 = 6.2;
+        double precioLitro = 1.42 , masaCargaKg = 1450 , largo = 2.2, ancho = 1.2 , alto= 1.1;
+        double p1 = 3.2 , p2 = 3.8 , p3 = 2.7 , deprecPorKm = 0.085;
         
         System.out.println("d1, d2, d3, t1, t2, t3, l1, l2, l3, "
                 + "precioLitro, masaCargaKg, largo, ancho, alto, "
@@ -31,14 +31,14 @@ public class trabajo1 {
         
         //punto 4 densidad y ocupacion
 
-        double volCamionM3 = 10.0 ; 
+        double volCamionM3 = 12.0 ; 
         double volumenM3 = (largo * ancho * alto);
         double densidad  = (masaCargaKg / volumenM3);
         double ocupacion = (volumenM3 / volCamionM3);
 
         // punto 5 emisiones de CO2
 
-        double fCO2 = 2.68 ; 
+        double fCO2 = 2.64 ; 
         double COTotal = (l1 + l2 + l3) * fCO2;
         double COporKm = COTotal / (d1 + d2 + d3);
 
@@ -65,7 +65,7 @@ public class trabajo1 {
         double costoMant = c_vprom * (d1 + d2 + d3); 
 
         // punto 9 Modelo polinómico de rendimiento
-        double a = -0.0008, b = 0.08, c = 4.0;
+        double a = -0.0009, b = 0.09, c = 3.8;
          //kml(v) = a*v^2 + b*v + c
         double kmlModelo = a * vprom * vprom + b * vprom+ c; 
         double LitrosModelo = (d1 + d2 + d3) / kmlModelo;
