@@ -1,5 +1,7 @@
 package clase4;
 
+import java.util.Scanner;
+
 public class Practica_codicionales {
     public static void main(String[] args) {
         /*
@@ -39,6 +41,78 @@ public class Practica_codicionales {
 
         System.out.println("la temperatura esta por debajo del punto de ebullicion.");
 
-         }
     }
+    /*
+     Si el número es positivo, sumar el número a total
+     de positivos, sino sumar al total de negativos.
+     */
+    int numero = 3;
+
+    int total_postivos  = 0;
+    int total_negativos = 0;
+
+    if (numero > 0){
+
+        total_postivos += numero; 
+
+        System.out.println("el nuemro " + numero + " es psitivo y se suma al total de positvos.");
+
+    }else {
+
+        total_negativos += numero;
+
+        System.out.println(" el numero " + numero + "es negativo asi que suma al total de nuemros negativos " );
+
+     }
+
+     System.out.println("total de positvos son : " + total_postivos);
+     System.out.println(" el total de nuemro negativos son : " + total_negativos);
+
+    Scanner scanner = new Scanner(System.in);
+     int x = 4 ;
+     int y = 2 ;
+     int z = 22;
+    
+
+    if ( x > y && z < 20 ){
+
+        System.out.println("las condiciones se cumplen .");
+        
+        System.out.println("Introduce un valor para 'p':");
+        int p = scanner.nextInt();
+        System.out.println("el valor de p es " + p);
+     }else{
+        System.out.println("Las condiciones no se cumplen para asignarle un valor a p.");
+     }
+     scanner.close();
+
+
+    /*
+    Si distancia es mayor que 20 y menos que 35,
+    leer un valor para tiempo.
+    */
+    Scanner scanner = new Scanner(System.in);
+    int distancia;
+
+    if (distancia > 20 && distancia < 35 ){
+
+        System.out.println("cumple la condicion para darle unvalor a tiempo");
+        System.out.println("ingresa el valor de tiempo :");
+        int tiempo = scanner.nextInt();
+    }else{
+        System.out.println("no cumple las condidciones para agregarle un timepo");
+    }
+    canner.close();
+
+
+
+    
+
+
+
+
+    }
+
 }
+
+
