@@ -405,6 +405,8 @@ public class Practica_codicionales {
         } else if (operacion_matematica.equals("3")) {
             System.out.printf("Su decisión fue '3' división entre %.2f y %.2f. Resultado es: %.2f%n",
                     numero1, numero2, (numero1 / numero2));
+        }else{
+            System.out.println("opcion incorreta vuelva a intentarlo");
         }
 
     }
