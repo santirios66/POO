@@ -12,5 +12,8 @@ public class EjecutarPersonClase7 {
         Person objPerson2 = new Person(1113784789, "Samuel", "Cruz", 14, 1.56, 50.3);
 
         System.out.println(objPerson2.Estudiar("Ingenieria de sistemas"));
+
+        //Tarea : Implemtar losmetodos get y set en la clase Persona.
+        // dichos metodos utiizarlos en la clase EjecutarPeersonClase7.
     }
 }
