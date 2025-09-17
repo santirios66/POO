@@ -27,12 +27,20 @@ public class Person {
     // Los metodos son siempre publicos.
     // Metodos.
 
-    public static void Caminar() {}
+    public static void Caminar() {
+        System.out.println("caminar");
+    }
 
-    public static void Jugar() {}
+    public static boolean Jugar() {
+        return true;
+    }
 
-    public static void Comer() {}
+    public static void Comer() {
+        System.out.println("Comiendo");
+    }
 
-    public static void Estudiar() {}
+    public static String Estudiar(String carrera) {
+        return "Usted esta estudiando: " + carrera;
+    }
  
 }
