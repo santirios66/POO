@@ -1,4 +1,4 @@
-package clase4;
+package Grupo2.clase4;
 
 import java.util.Scanner;
 

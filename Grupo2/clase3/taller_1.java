@@ -1,5 +1,7 @@
-package clase3;
+package Grupo2.clase3;
+
 public class taller_1 {
+    
     public static void main(String[] args) {
         //punto 1 
         double d1 = 50.0 , d2 = 60.0 , d3 = 40.0;
