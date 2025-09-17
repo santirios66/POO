@@ -45,6 +45,56 @@ public class Person {
         return "Usted esta estudiando: " + carrera;
     }
 
-    //Tarea consultar sobre el metodo toString.
+    // Tarea consultar sobre el metodo toString.
+
+    // Geters and Setters
+
+    public int getIdentificacion() {
+        return Identificacion;
+    }
+
+    public void setIdentificacion(int identificacion) {
+        this.Identificacion = identificacion;
+    }
+
+    public String getNombre() {
+        return Nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.Nombre = nombre;
+    }
+
+    public String getApellidos() {
+        return Apellidos;
+    }
+
+    public void setApellidos(String apellidos) {
+        this.Apellidos = apellidos;
+    }
+
+    public int getEdad() {
+        return Edad;
+    }
+
+    public void setEdad(int edad) {
+        this.Edad = edad;
+    }
+
+    public double getEstatura() {
+        return Estatura;
+    }
+
+    public void setEstatura(double estatura) {
+        this.Estatura = estatura;
+    }
+
+    public double getPeso() {
+        return Peso;
+    }
+
+    public void setPeso(double peso) {
+        this.Peso = peso;
+    }
 
 }
