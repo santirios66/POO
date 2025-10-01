@@ -28,4 +28,23 @@ public class OperacionesMatematicas {
         return n1 + n2;
     }
     
+    public int resta(){
+        return n1 - n2;
+    }
+
+    public int multi(){
+        return n1 * n2;
+    }
+
+    public double dividir(){
+        double result = 0.0;
+        if (n2 == 0){
+            result = 0;
+        }else {
+            result =  n1 / n2;
+        }
+        return result;
+    }
+
+    
 }
