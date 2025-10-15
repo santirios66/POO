@@ -114,9 +114,9 @@ public class Producto {
     // 🧾 Método toString para mostrar información
     public String toString() {
         return "Código: " + codigo +
-                "Descripción: " + descripcion +
-                "Cantidad: " + cantidad +
-                "Precio Unitario: " + precioUnitario +
-                "Subtotal: " + calcularSubtotal();
+                "\nDescripción: " + descripcion +
+                "\nCantidad: " + cantidad +
+                "\nPrecio Unitario: " + precioUnitario +
+                "\nSubtotal: " + calcularSubtotal();
     }
 }
