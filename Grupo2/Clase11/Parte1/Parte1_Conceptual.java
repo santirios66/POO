@@ -41,6 +41,7 @@ public class Parte1_Conceptual {
      * 
      * 
      * Parte II – Modelado (15 %)
+     * Atributos
      * --------------------------------------------------------
      * | Nombre       | Tipo de dato | Visibilidad | Descripción |
      * --------------------------------------------------------
@@ -48,6 +49,8 @@ public class Parte1_Conceptual {
      * | numeroCuenta | String       | private     | Número de la cuenta |
      * | saldo        | double       | private     | Dinero disponible >= 0 |
      * --------------------------------------------------------
+     * 
+     * Metodos
      * -------------------------------------------------------------
      * | Nombre del método | Parámetros     | Retorno | Descripción                         |
      * -------------------------------------------------------------
