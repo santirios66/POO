@@ -61,7 +61,7 @@ public class Libro {
     public boolean prestar() {
         if (!this.prestado) {
             this.prestado = true;
-            System.out.println("El libro ’" + this.titulo + "’ ha sido prestado exitosamente .");
+            System.out.println("El libro ’" + this.titulo +    "’ ha sido prestado exitosamente .");
             return true;
         } else {
             System.out.println("El libro ’" + this.titulo + "’ ya esta prestado .");
