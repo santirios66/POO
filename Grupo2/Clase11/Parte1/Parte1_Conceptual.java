@@ -63,7 +63,6 @@ public class Parte1_Conceptual {
      * | getNumeroCuenta()   | Ninguno      | String  | Devuelve el número de cuenta        |
      * | setNumeroCuenta()   | String n     | void    | Asigna si tiene al menos 6 dígitos  |
      * | getSaldo()          | Ninguno      | double  | Devuelve el saldo actual            |
-     * | setSaldo()          | double s     | void    | Asigna saldo si es mayor o igual a 0|
      * | toString()          | Ninguno      | String  | Muestra la información de la cuenta |
      * -------------------------------------------------------------
      */
