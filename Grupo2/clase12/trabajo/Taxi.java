@@ -27,11 +27,14 @@ public class Taxi extends Transporte {
                 "Tarifa base: $" + tarifaBase +
                 ", por km: $" + tarifaPorKm +
                 ". Empresa: " + empresa +
-                ". Estado: " + (disponible ? "Disponible" : "Ocupado"));
+                ". Estado: " + (disponible ? "Disponible" : "Ocupado")+ "kilometros recorridos : " + KmRecorridos);
     }
 
     public double calcularTarifa(double km) {
-        return tarifaBase + (tarifaPorKm * km);
+        KmRecorridos += km;
+        double total = tarifaBase + (tarifaPorKm * km);
+        System.out.println("El taxi ha recorrido " + KmRecorridos + " km.");
+        return total;
     }
 
     public void cambiarDisponibilidad(boolean estado) {

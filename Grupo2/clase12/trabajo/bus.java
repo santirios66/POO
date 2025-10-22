@@ -21,11 +21,16 @@ public class bus extends Transporte {
     }
 
     public void describir(){
-        System.out.println("Bus de la empresa " + empresa +
-                " en la ruta " + numeroRuta + " con " + numeroParadas + " paradas." +
-                " Capacidad: " + capacidad +
-                ", Velocidad máx: " + velocidadMax + " km/h." +
-                " En servicio: " + (enServicio ? "Sí" : "No"));
+        System.out.println(" Bus de la empresa " + empresa +
+                "\nRuta: " + numeroRuta +
+                "\nConductor: " + conductor +
+                "\nNúmero de paradas: " + numeroParadas +
+                "\nCapacidad: " + capacidad +
+                "\nVelocidad máx: " + velocidadMax + " km/h" +
+                "\nEn servicio: " + (enServicio ? "Sí" : "No") +
+                "\nWifi: " + (tieneWifi ? "Disponible" : "No disponible") +
+                "\nAire acondicionado: " + (tieneAire ? "Sí" : "No") +
+                "\nTarifa: $" + tarifa);
     }
 
     public void iniciarRuta(){
