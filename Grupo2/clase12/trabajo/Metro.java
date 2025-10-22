@@ -8,7 +8,8 @@ public class Metro extends Transporte {
     public Metro(int capacidad, String tipo, String empresa, double velocidad, boolean enServicio, int lineas,
             int estaciones) {
 
-        // aqui lo que estoy haciendo es llamar al constructor del padre con super()
+        // aqui lo que estoy haciendo es llamar al constructor del padre(Transporte) con
+        // super()
         super(capacidad, tipo, empresa, velocidad, enServicio);
 
         this.lineas = lineas;
@@ -16,7 +17,7 @@ public class Metro extends Transporte {
     }
 
     @Override
-    public void describir(){
+    public void describir() {
         System.out.println("Metro de la empresa " + empresa +
                 " con " + lineas + " líneas y " + estaciones + " estaciones." +
                 " Capacidad: " + capacidad +
@@ -24,10 +25,13 @@ public class Metro extends Transporte {
                 " En servicio: " + (enServicio ? "Sí" : "No"));
     }
 
-    public void abrirPuertas(){
+    @Override
+    public void abrirPuertas() {
         System.out.println("El metro esta abriendo las puertas");
     }
-    public void cerrarPuertas(){
+
+    @Override
+    public void cerrarPuertas() {
         System.out.println("El metro esta cerrando sus puertas");
     }
 

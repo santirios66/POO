@@ -21,15 +21,17 @@ public class Taxi extends Transporte {
         this.disponible = disponible;
     }
 
+    @Override
     public void describir() {
         System.out.println(" Taxi conducido por " + conductor +
                 " (Licencia: " + numeroLicencia + "). " +
                 "Tarifa base: $" + tarifaBase +
                 ", por km: $" + tarifaPorKm +
                 ". Empresa: " + empresa +
-                ". Estado: " + (disponible ? "Disponible" : "Ocupado")+ "kilometros recorridos : " + KmRecorridos);
+                ". Estado: " + (disponible ? "Disponible" : "Ocupado") + "kilometros recorridos : " + KmRecorridos);
     }
 
+    @Override
     public double calcularTarifa(double km) {
         KmRecorridos += km;
         double total = tarifaBase + (tarifaPorKm * km);
@@ -37,6 +39,7 @@ public class Taxi extends Transporte {
         return total;
     }
 
+    @Override
     public void cambiarDisponibilidad(boolean estado) {
         this.disponible = estado;
         System.out.println("El taxi ahora está " + (estado ? "disponible" : "ocupado"));

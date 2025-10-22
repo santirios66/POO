@@ -9,10 +9,11 @@ public class bus extends Transporte {
     private String conductor;
     private double tarifa;
 
-    public bus(int capacidad, String tipo, String empresa, double velocidad, boolean enServicio , int numeroRuta, boolean tieneWifi, boolean tieneAire, int numeroParadas, String conductor, double tarifa){
+    public bus(int capacidad, String tipo, String empresa, double velocidad, boolean enServicio, int numeroRuta,
+            boolean tieneWifi, boolean tieneAire, int numeroParadas, String conductor, double tarifa) {
 
         super(capacidad, tipo, empresa, velocidad, enServicio);
-        this.numeroRuta= numeroRuta;
+        this.numeroRuta = numeroRuta;
         this.tieneWifi = tieneWifi;
         this.tieneAire = tieneAire;
         this.numeroParadas = numeroParadas;
@@ -20,7 +21,8 @@ public class bus extends Transporte {
         this.tarifa = tarifa;
     }
 
-    public void describir(){
+    @Override
+    public void describir() {
         System.out.println(" Bus de la empresa " + empresa +
                 "\nRuta: " + numeroRuta +
                 "\nConductor: " + conductor +
@@ -33,11 +35,13 @@ public class bus extends Transporte {
                 "\nTarifa: $" + tarifa);
     }
 
-    public void iniciarRuta(){
+    @Override
+    public void iniciarRuta() {
         System.out.println("El bus ha iniciado su ruta");
     }
-    
-    public void finalizarRuta(){
+
+    @Override
+    public void finalizarRuta() {
         System.out.println("El bus ha finalizado su ruta");
     }
 }

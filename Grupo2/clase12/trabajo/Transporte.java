@@ -25,11 +25,30 @@ public class Transporte {
                 ", en servicio: " + (enServicio ? "Sí" : "No"));
     }
 
-    public void arrancar() {
-        System.out.println("El " + tipo + " está arrancando.");
+    public void iniciarRuta() {
+        System.out.println("Este transporte no tiene ruta específica.");
     }
 
-    public void detener() {
-        System.out.println("El " + tipo + " se ha detenido.");
+    public void finalizarRuta() {
+        System.out.println("Finalizando ruta genérica del transporte.");
     }
+
+
+    public double calcularTarifa(double km) {
+        System.out.println("Este transporte no calcula tarifa.");
+        return 0.0;
+    }
+    
+    public void abrirPuertas() {
+        System.out.println("Este transporte no tiene puertas configuradas.");
+    }
+
+    public void cerrarPuertas() {
+        System.out.println("El metro esta cerrando sus puertas");
+    }
+
+    public void cambiarDisponibilidad(boolean estado) {
+        System.out.println("Este transporte no maneja disponibilidad.");
+    }
+
 }
