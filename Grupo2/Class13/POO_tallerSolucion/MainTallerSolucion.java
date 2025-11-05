@@ -12,8 +12,8 @@ public class MainTallerSolucion {
         fotos.add(f1);
         fotos.add(f2);
 
-        Impresion impresion = new Impresion(1, "Impresión Color", 5000, "Fotos tamaño carta", 10, "Rojo", fotos);
-        Camara camara = new Camara(2, "Cámara digital", 250000, "Cámara profesional", 5, "Canon", "EOS 200D");
+        Producto impresion = new Impresion(1, "Impresión Color", 5000, "Fotos tamaño carta", 10, "Rojo", fotos);
+        Producto camara = new Camara(2, "Cámara digital", 250000, "Cámara profesional", 5, "Canon", "EOS 200D");
 
         Date fechaRegistro = new Date();
         Cliente cliente = new Cliente(123456789, "Santiago", "Cali", 311456789, "santi@gmail.com", fechaRegistro);
